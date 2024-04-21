@@ -1,0 +1,55 @@
+.nav_bar:has(#dark_btn:checked) .dark {
+  display: none;
+}
+.nav_bar:has(#dark_btn:checked) .light {
+  display: block;
+}
+:root:has(#dark_btn:checked) {
+  --grey-bg-color: #000;
+  --secondary-color: #ffffff;
+  --main-bg-color: #212529;
+  --primary-color: #c17e1f;
+  --dark-color: #fff;
+}
+body:has(#dark_btn:checked) .active {
+  color: var(--ternary-color);
+}
+body:has(#dark_btn:checked) .nav_bar,
+body:has(#dark_btn:checked) .chef,
+body:has(#dark_btn:checked) .contact,
+body:has(#dark_btn:checked) .header .header_btn .watch_btn span i::before {
+  background-color: #281d1d;
+}
+.nav_bar:has(#dark_btn:checked).nav_bar ul {
+  background-color: #281d1d;
+  border-left: #212529;
+}
+body:has(#dark_btn:checked) .header,
+body:has(#dark_btn:checked) .gallery {
+  background-color: #252525;
+}
+body:has(#dark_btn:checked) .chef .chef_cards .card .chef_pic::before {
+  background-image: url("../images/team-shape-dark.svg");
+  color: #131212;
+}
+body:has(#dark_btn:checked) .chef .card {
+  background-color: #171717;
+}
+body:has(#dark_btn:checked) .contact form {
+  background-color: #131212;
+}
+body:has(#dark_btn:checked) .header p,
+body:has(#dark_btn:checked) .chef {
+  color: var(--secondary-color);
+}
+body:has(#dark_btn:checked) .chef p,
+body:has(#dark_btn:checked) .contact p {
+  color: #9f9f9f;
+}
+body:has(#dark_btn:checked) .contact p,
+body:has(#dark_btn:checked) .footer h2,
+h3,
+p,
+i {
+  color: #fff;
+}

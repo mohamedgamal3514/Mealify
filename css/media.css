@@ -1,0 +1,186 @@
+/* Small Screen */
+@media screen and (min-width: 668px) {
+  /* Chefs */
+  .chef .chef_cards {
+    column-gap: 5px;
+    justify-content: center;
+  }
+  .chef .chef_cards .card {
+    width: 80%;
+  }
+  /* Gallery */
+  .gallery .gallery_images {
+    flex-direction: row;
+  }
+  /* contacts */
+  .contact .contact_info .contact_details .contact_text p {
+    font-size: 16px;
+  }
+  .contact .contact_info .contact_details .contact_icon i {
+    font-size: 18px;
+  }
+  .contact form #user_name {
+    width: 48%;
+    float: left;
+  }
+  .contact form #user_email {
+    width: 48%;
+    float: right;
+  }
+  /* Footer */
+  .footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer .mealify {
+    width: 45%;
+  }
+  .footer .subscribe {
+    width: 100%;
+    order: 1;
+  }
+  .footer .get_touch {
+    width: 45%;
+  }
+  .footer .subscribe {
+    margin-top: 30px;
+  }
+}
+/* Meduim Screen  */
+@media screen and (min-width: 998px) {
+  .container {
+    width: 90%;
+  }
+  /* Header */
+  .header {
+    min-height: 60vh;
+    display: flex;
+  }
+  .header .container {
+    text-align: left;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header .header_image {
+    margin: 0;
+    order: 1;
+    width: 80%;
+  }
+  .header .header_btn {
+    justify-content: flex-start;
+  }
+  .header .header_content p {
+    max-width: 90%;
+  }
+
+  /* chef */
+  .chef .chef_cards {
+    justify-content: space-between;
+  }
+  .chef .chef_cards .card {
+    width: 30%;
+  }
+  /* contacts */
+  .contact .contact_content {
+    flex-direction: row;
+    border-radius: 5px;
+    gap: 10;
+    justify-content: space-between;
+  }
+  .contact_info {
+    flex-basis: 48%;
+  }
+  .contact .contact_info .contact_details {
+    background-color: var(--grey-bg-color);
+    padding: 20px 10px;
+    column-gap: 20px;
+    justify-content: flex-start;
+  }
+}
+
+/* Large Screen */
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 70%;
+  }
+  /*  navbar */
+  .nav_bar {
+    min-height: 50px;
+  }
+  .nav_bar .toggle_icon {
+    display: none;
+  }
+  .nav_bar .close_btn {
+    display: none;
+  }
+  .nav_bar ul {
+    display: flex;
+    flex-direction: row;
+    background-color: transparent;
+    position: sticky;
+    height: auto;
+    width: auto;
+    padding: 0;
+    z-index: 20;
+    transform: translatex(0);
+    transition: transform 500ms;
+    border: none;
+  }
+  .nav_bar ul li {
+    padding: 0 15px;
+    margin: 0;
+  }
+  .nav_bar ul li a.active {
+    color: var(--primary-color);
+    padding-bottom: 4px;
+    border-bottom: 3px solid var(--primary-color);
+  }
+  .nav_bar ul li a {
+    position: relative;
+    font-size: 18px;
+  }
+  .nav_bar ul li .under_line::before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 0;
+    bottom: -5px;
+    background-color: var(--primary-color);
+    transition: all 500ms;
+  }
+  .nav_bar ul li:hover .under_line::before {
+    width: 100%;
+  }
+  /* Header */
+  .header {
+    min-height: 100vh;
+  }
+  .header .header_content {
+    width: 60%;
+  }
+  .header .header_image {
+    width: 40%;
+  }
+  .header .header_content p {
+    max-width: 70%;
+  }
+  /* Footer */
+  .footer .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .footer .mealify {
+    width: 28%;
+  }
+  .footer .subscribe {
+    width: 40%;
+  }
+  .footer .get_touch {
+    width: 28%;
+    order: 1;
+  }
+  .footer .subscribe {
+    margin-top: 0;
+  }
+}
